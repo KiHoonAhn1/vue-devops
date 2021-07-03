@@ -7,7 +7,11 @@ git filter-branch --env-filter \
          export GIT_COMMITTER_DATE="Fri Jul 2 11:00:00 2021 +0900"
      fi' 
 
+<<<<<<< HEAD
 git pull origin master --allow-unrelated-histories
+=======
+git pull origin master --allow-unrelated-historyes
+>>>>>>> 8a00829 (txt)
 > :wq로 저장
 git push origin master
 
