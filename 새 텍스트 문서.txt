@@ -1,0 +1,12 @@
+git log로 해쉬값
+
+git filter-branch --env-filter \
+    'if [ $GIT_COMMIT = 9d4196763dd954c674a4464cecfe86000246c511 ]
+     then
+         export GIT_AUTHOR_DATE="Fri Jul 2 11:00:00 2021 +0900"
+         export GIT_COMMITTER_DATE="Fri Jul 2 11:00:00 2021 +0900"
+     fi'
+
+git pull origin master --alow-unrelated-historyes
+> :wq로 저장
+git push origin master
